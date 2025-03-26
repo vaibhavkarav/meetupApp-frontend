@@ -108,7 +108,7 @@ const EventDetails = () => {
             <div className="row">
               {data.speakerDetails.map((speaker) => (
                 <div className="col-md-6">
-                  <div className="border rounded">
+                  <div className="border rounded d-flex justify-content-center">
                     <div>
                       <img
                         src={speaker.imageUrl}
@@ -117,9 +117,7 @@ const EventDetails = () => {
                         height={75}
                         width={75}
                       />
-                    </div>
-                    <div className="mt-1 text-center">
-                      <p className="fw-bolder">
+                      <p className="fw-bolder text-center">
                         {speaker.name} <br />
                         <span className="fw-normal">{speaker.position}</span>
                       </p>
