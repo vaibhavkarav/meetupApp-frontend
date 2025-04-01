@@ -9,8 +9,8 @@ function App() {
     <>
       <Header />
       <main className="container p-5 mb-5">
-        <div className="mb-3 py-5">
-          <div className="row g-0">
+        <div className="mb-4 py-5">
+          <div className="row g-0 mb-3">
             <div className="col-md-8">
               <div className="card-body">
                 <h2 className="card-title display-5 fw-bold py-3">

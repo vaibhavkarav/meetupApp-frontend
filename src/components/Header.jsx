@@ -1,13 +1,10 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const [input, setInput] = useState("");
-  console.log(input);
   return (
     <>
       <header>
-        <nav className="navbar bg-light-subtle px-3">
+        <nav className="navbar  px-3">
           <div className="container-fluid">
             <NavLink className="navbar-brand ms-2" to="/">
               <img
@@ -17,15 +14,6 @@ const Header = () => {
                 width={80}
               />
             </NavLink>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="🔍 Search by title and tag"
-                aria-label="Search"
-                onChange={(e) => setInput(e.target.value)}
-              />
-            </form>
           </div>
         </nav>
       </header>

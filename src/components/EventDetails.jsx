@@ -19,17 +19,21 @@ const EventDetails = () => {
         <div className="row gap-5">
           <div className="col-md-6" key={data._id}>
             <div className="card border-0">
-              <h5>{data.title}</h5>
-              <p>
-                Hosted By: <br /> {data.hostedBy}
+              <h5 className="display-6 fw-semibold">{data.title}</h5>
+              <p className="mt-3 mb-4">
+                Hosted By: <br />{" "}
+                <span className="fw-bold">{data.hostedBy}</span>
               </p>
               <img src={data.eventPosterUrl} alt="" className="img-fluid" />
-              <h4>Details:</h4>
-              <p className="text-wrap">{data.details}</p>
-              <h4>Event Tags:</h4>
-              <div className="d-grid d-md-block" key={data._id}>
+              <h3 className="fw-semibold mt-3">Details:</h3>
+              <p className="text-wrap fs-5">{data.details}</p>
+              <h3 className="fw-semibold">Event Tags:</h3>
+              <div key={data._id}>
                 {data.eventTags.map((tag) => (
-                  <span className="badge text-light bg-primary me-2 mb-2 p-2 ">
+                  <span
+                    className="btn text-light me-3 mb-2 p-2 rounded pe-none fw-bold"
+                    style={{ backgroundColor: "#f65858" }}
+                  >
                     {tag}
                   </span>
                 ))}
